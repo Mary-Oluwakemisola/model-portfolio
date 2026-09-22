@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lammy | Model Portfolio</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">LAMMY❤️</div>
+
+        <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+</nav>
+    </header>
+
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <p class="small-text">MODEL • CREATIVE • LAGOS</p>
+
+            <h1>Yaramola<br>Olamide Maria</h1>
+
+            <p>
+                Face, fashion and commercial model
+                available for fashion campaigns, editorials,
+                commercials and video shoots.
+            </p>
+
+            <a href="#contact" class="button">Book Me</a>
+
+        </div>
+
+
+        <div class="hero-image">
+            <img src="{{ url_for('static', filename='images/hero.jpg') }}"
+                 alt="Lammy❤️- Model">
+        </div>
+
+    </section>
+
+        <section class="about" id="about">
+
+    <div class="section-title">
+        <p class="small-text">GET TO KNOW ME</p>
+        <h2>About Lammy❤️</h2>
+    </div>
+
+    <div class="about-content">
+
+        <div class="about-text">
+
+            <p class="intro">
+                I’m Yaramola Olamide Maria, professionally known as Lammy,
+                a Lagos-based face, fashion and commercial model.
+            </p>
+
+            <p>
+                I’m passionate about fashion, beauty and creative storytelling.
+                I enjoy bringing confidence, personality and versatility
+                into every project I work on.
+            </p>
+
+            <p>
+                I’m available for fashion campaigns, editorials,
+                beauty projects, commercial shoots, video content
+                and fashion shows.
+            </p>
+
+            <a href="#contact" class="button">
+                Work With Me
+            </a>
+
+        </div>
+
+        <div class="measurements">
+
+            <h3>Model Details</h3>
+
+            <div class="measurement-item">
+                <span>Height</span>
+                <strong>5'8"</strong>
+            </div>
+
+            <div class="measurement-item">
+                <span>Bust</span>
+                <strong>27"</strong>
+            </div>
+
+            <div class="measurement-item">
+                <span>Waist</span>
+                <strong>23"</strong>
+            </div>
+
+            <div class="measurement-item">
+                <span>Hips</span>
+                <strong>33"</strong>
+            </div>
+
+            <div class="measurement-item">
+                <span>Shoe Size</span>
+                <strong>40</strong>
+            </div>
+
+            <div class="measurement-item">
+                <span>Hair</span>
+                <strong>Black</strong>
+            </div>
+
+            <div class="measurement-item">
+                <span>Eyes</span>
+                <strong>Brown</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <div class="profile-strip">
+
+    <div class="profile-item">
+        <span>BASED IN</span>
+        <strong>Lagos, Nigeria</strong>
+    </div>
+
+    <div class="profile-item">
+        <span>MODEL TYPE</span>
+        <strong>Fashion • Commercial</strong>
+    </div>
+
+    <div class="profile-item">
+        <span>AVAILABLE FOR</span>
+        <strong>Bookings & Collaborations</strong>
+    </div>
+
+</div>
+
+    <section class="portfolio" id="portfolio">
+
+    <div class="section-title">
+        <p class="small-text">MY WORK</p>
+        <h2>Portfolio</h2>
+    </div>
+
+    <div class="portfolio-grid">
+
+        <div class="portfolio-item">
+            <img src="{{ url_for('static', filename='images/polaroid.jpg') }}"
+                 alt="Lammy polaroid">
+
+            <div class="portfolio-label">
+                <span>01</span>
+                <h3>Polaroids</h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="{{ url_for('static', filename='images/collab.jpg') }}"
+                 alt="Lammy fashion model">
+
+            <div class="portfolio-label">
+                <span>02</span>
+                <h3>Fashion</h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="{{ url_for('static', filename='images/commercial.jpg') }}"
+                 alt="Lammy commercial model">
+
+            <div class="portfolio-label">
+                <span>03</span>
+                <h3>Commercial</h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="{{ url_for('static', filename='images/model.jpg') }}"
+                 alt="Lammy model">
+
+            <div class="portfolio-label">
+                <span>04</span>
+                <h3>Editorial</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="services" id="services">
+
+    <div class="section-title">
+        <p class="small-text">WHAT I DO</p>
+        <h2>Services & Experience</h2>
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <h3>Fashion Modeling</h3>
+            <p>
+                Available for fashion campaigns, lookbooks,
+                editorials and fashion shows.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Commercial Modeling</h3>
+            <p>
+                Available for brand campaigns, product shoots,
+                advertisements and promotional content.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Beauty & Face Modeling</h3>
+            <p>
+                Available for beauty, skincare, makeup,
+                hair and facial campaigns.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Video & Content</h3>
+            <p>
+                Available for video shoots, social media campaigns,
+                creative projects and brand content.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <div class="section-title">
+        <p class="small-text">LET'S WORK TOGETHER</p>
+        <h2>Book Lammy❤️</h2>
+    </div>
+
+    <div class="contact-content">
+
+        <div class="contact-text">
+
+            <h3>Have a project in mind?</h3>
+
+            <p>
+                Interested in working with me?
+                I'd love to hear about your project.
+            </p>
+
+            <p>
+                Available for fashion, commercial, beauty,
+                editorial and video projects.
+            </p>
+
+            <a href="mailto:yaramolaolamide2005@gmail.com" class="button">
+                Contact Me
+            </a>
+
+        </div>
+
+        <div class="social-links">
+
+            <h3>Follow Me</h3>
+
+            <a href="mailto:yaramolaolamide2005@gmail.com">
+                Email — yaramolaolamide2005@gmail.com
+            </a>
+
+            <a href="https://www.instagram.com/purelammy/"
+               target="_blank">
+                Instagram — @purelammy
+            </a>
+
+            <a href="https://www.tiktok.com/@mary_oluwakemisola"
+               target="_blank">
+                TikTok — @mary_oluwakemisola
+            </a>
+
+            <p class="location">
+                Lagos, Nigeria
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <footer>
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+            LAMMY
+        </div>
+
+        <p>
+            Face • Fashion • Commercial Model
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Lammy❤️. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+</body>
+</html>
