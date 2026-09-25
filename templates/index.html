@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lammy | Model Portfolio</title>
+<title>Lammy | Model Portfolio</title>
+
+<meta name="description"
+      content="Yaramola Olamide Maria, professionally known as Lammy — Lagos-based face, fashion and commercial model available for fashion, beauty, commercial and creative projects.">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
@@ -18,6 +21,7 @@
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#portfolio">Portfolio</a>
+    <a href="#creative">Social Media</a>
     <a href="#contact">Contact</a>
 </nav>
     </header>
@@ -49,7 +53,7 @@
 
     </section>
 
-        <section class="about" id="about">
+    <section class="about" id="about">
 
     <div class="section-title">
         <p class="small-text">GET TO KNOW ME</p>
@@ -126,7 +130,7 @@
 
     </div>
 
-</section>
+    </section>
 
     <div class="profile-strip">
 
@@ -198,47 +202,85 @@
 
     </div>
 
-</section>
-
-<section class="services" id="services">
+    <section class="creative" id="creative">
 
     <div class="section-title">
-        <p class="small-text">WHAT I DO</p>
-        <h2>Services & Experience</h2>
+        <p class="small-text">FOLLOW MY JOURNEY</p>
+        <h2>Social Media</h2>
     </div>
 
-    <div class="services-grid">
+    <div class="creative-content">
 
-        <div class="service-card">
-            <h3>Fashion Modeling</h3>
+        <div class="creative-text">
+            <h3>See more of Lammy</h3>
+
             <p>
-                Available for fashion campaigns, lookbooks,
-                editorials and fashion shows.
+                Follow my latest fashion looks, modelling work,
+                creative projects and behind-the-scenes content
+                on social media.
             </p>
+
+            <div class="social-buttons">
+
+                <a href="https://www.instagram.com/purelammy/"
+                   target="_blank"
+                   class="social-button">
+                    Instagram — @purelammy
+                </a>
+
+                <a href="https://www.tiktok.com/@mary_oluwakemisola"
+                   target="_blank"
+                   class="social-button">
+                    TikTok — @mary_oluwakemisola
+                </a>
+
+            </div>
         </div>
 
-        <div class="service-card">
-            <h3>Commercial Modeling</h3>
-            <p>
-                Available for brand campaigns, product shoots,
-                advertisements and promotional content.
-            </p>
-        </div>
+    </div>
 
-        <div class="service-card">
-            <h3>Beauty & Face Modeling</h3>
-            <p>
-                Available for beauty, skincare, makeup,
-                hair and facial campaigns.
-            </p>
-        </div>
+</section>
 
-        <div class="service-card">
-            <h3>Video & Content</h3>
-            <p>
-                Available for video shoots, social media campaigns,
-                creative projects and brand content.
-            </p>
+</section>
+
+<section class="creative" id="creative">
+
+    <div class="section-title">
+        <p class="small-text">CREATIVE WORK</p>
+        <h2>Video & Content</h2>
+    </div>
+
+    <div class="video-container">
+
+        <video controls>
+            <source src="{{ url_for('static', filename='videos/lammy-video.mp4') }}"
+                    type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </div>
+
+    <div class="creative-text">
+
+        <p>
+            Explore some of my creative work, fashion content
+            and modelling projects.
+        </p>
+
+        <div class="social-buttons">
+
+            <a href="https://www.instagram.com/purelammy/"
+               target="_blank"
+               class="social-button">
+                Instagram — @purelammy
+            </a>
+
+            <a href="https://www.tiktok.com/@mary_oluwakemisola"
+               target="_blank"
+               class="social-button">
+                TikTok — @mary_oluwakemisola
+            </a>
+
         </div>
 
     </div>
@@ -278,7 +320,13 @@
 
             <h3>Follow Me</h3>
 
-            <a href="mailto:yaramolaolamide2005@gmail.com">
+            <a href="https://wa.me/2349073112171?text=Hello%20Lammy%2C%20I%27m%20interested%20in%20booking%20you%20for%20a%20modelling%20project.%20I%27d%20like%20to%20discuss%20the%20project%20details%20and%20your%20availability."
+                target="_blank">
+                WhatsApp — Bookings & Enquiries
+            </a>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yaramolaolamide2005@gmail.com"
+                target="_blank">
                 Email — yaramolaolamide2005@gmail.com
             </a>
 
@@ -332,4 +380,49 @@
 
 </footer>
 </body>
+
+<div id="imageViewer" class="image-viewer">
+
+    <span class="close-viewer">&times;</span>
+
+    <img id="viewerImage" src="" alt="Lammy portfolio image">
+
+</div>
+
+<script>
+
+    const portfolioImages = document.querySelectorAll(".portfolio-item img");
+    const imageViewer = document.getElementById("imageViewer");
+    const viewerImage = document.getElementById("viewerImage");
+    const closeViewer = document.querySelector(".close-viewer");
+
+    portfolioImages.forEach(function(image) {
+
+        image.addEventListener("click", function() {
+
+            viewerImage.src = image.src;
+            imageViewer.style.display = "flex";
+
+        });
+
+    });
+
+    closeViewer.addEventListener("click", function() {
+
+        imageViewer.style.display = "none";
+
+    });
+
+    imageViewer.addEventListener("click", function(event) {
+
+        if (event.target === imageViewer) {
+            imageViewer.style.display = "none";
+        }
+
+    });
+
+</script>
+
+</body>
+</html>
 </html>
